@@ -1,6 +1,6 @@
 # BrainPopProject
 
-#Overview
+# Overview
 
 This project is designed to automate testing for BrainPOP using a Selenium-based BDD framework.
 Prerequisites
@@ -9,7 +9,7 @@ Prerequisites
 * ChromeDriver installed and added to the system PATH
 * Git installed (for cloning the repository
 
-#Getting Started
+# Getting Started
 
 1. Clone the Repository:
 git clone https://github.com/alinazaripov/BrainPopProject.git
@@ -22,7 +22,7 @@ Execute tests using Maven:
 
 mvn clean test
 
-#Test Reports
+# Test Reports
 * Test reports are generated in the target directory.
 * Open target/cucumber-reports/index.html to view the Cucumber HTML report.
 
