@@ -14,25 +14,7 @@ public class SearchPage {
 
     }
 
-    @FindBy(xpath = "//div[@class='dropdown_label']")
-    public WebElement logInButtonDropdown;
-
-    @FindBy(id = "nli_grownup_button")
-    public WebElement grownUpButton;
-
-    @FindBy(xpath = "//input[@id='username']")
-    public WebElement inputUserName;
-
-    @FindBy(xpath = "//input[@id='password-input']")
-    public WebElement inputPassword;
-
-    @FindBy(xpath = "//button[contains(text(),'Allow all cookies')]")
-    public WebElement allowCookies;
-
-    @FindBy(xpath = "//button[@type='submit']")
-    public WebElement clickLogInButton;
-
-    @FindBy(xpath = "//div[@class='input_container']//input")
+    @FindBy(xpath = "//input[contains(@id,'search-input-_')]")
     public WebElement searchPlaceHolder;
 
     @FindBy(xpath = "//button[contains(@class,'button-wrapper medium')]")
@@ -73,10 +55,6 @@ public class SearchPage {
         int actualCount = listOfResultTopic.size();
         Assert.assertEquals(expectedCount, actualCount);
     }
-
-    //if attribute is greater than 0 that means user is playing the video..
-    //Drag and drop and x and y value
-    //if its not greater than 0 the time duration is 6:16
 
 
 }
